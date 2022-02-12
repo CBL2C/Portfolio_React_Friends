@@ -18,3 +18,7 @@ h1 {
 .card {
     background-color:#1E242F;
 }
+
+card-title,.label {
+    font-weight:bold;
+}

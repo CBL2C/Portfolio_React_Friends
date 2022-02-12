@@ -38,16 +38,17 @@ function GetSomeFriends(props) {
               <p className="card-text">
                 <span class="label">Email: </span>
                 {aFriend.email}
+                <br />
+                <span class="label">Cell: </span>
+                {aFriend.cell}
+                <br />
+                <span class="label">Age: </span>
+                {aFriend.dob.age}
               </p>
-              <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p className="card-text"><small class="text-muted">Located in {aFriend.location.country}</small></p>
             </div>
           </div>
         </div>
-
-
-
-
-
       </React.Fragment>
     );
   };
