@@ -1,0 +1,43 @@
+@import "toastr/build/toastr.min.css";
+
+body{
+  background-color: #3D5467;
+  color:#e6f2e9;
+}
+
+
+button.link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline;
+  /* margin: 0;
+  padding: 0; */
+  text-decoration: none;
+}
+
+.btn-cus {
+  background-color: #A7BEAE;
+  border-color:#20281f;
+  color:#20281f;
+}
+
+.form-label{
+  font-weight: bold;
+}
+
+.link-button:hover,
+.link-button:focus {
+  text-decoration: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
