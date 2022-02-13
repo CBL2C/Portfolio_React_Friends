@@ -26,18 +26,19 @@ function App() {
     <React.Fragment>
       <Nav user={user}></Nav>
       <main role="main">
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<Home user={user}></Home>}></Route>
-            <Route path="/Friends" element={<Friends user={user} />}></Route>
-            <Route path="/Login" element={<Login />}></Route>
-            <Route path="/Register" element={<Register />}></Route>
-          </Routes>
-          <hr />
+        <div id="content">
+          <div id="fContainer" className="mx-auto">
+            <Routes>
+              <Route path="/" element={<Home user={user}></Home>}></Route>
+              <Route path="/Friends" element={<Friends user={user} />}></Route>
+              <Route path="/Login" element={<Login />}></Route>
+              <Route path="/Register" element={<Register />}></Route>
+            </Routes>
+          </div>
         </div>
       </main>
 
-      <div className="container">
+      <div>
         <Footer></Footer>
       </div>
     </React.Fragment>

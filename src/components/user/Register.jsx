@@ -44,7 +44,7 @@ function Register() {
   return (
     <React.Fragment>
       <form>
-        <div className="container my-4">
+        <div className="container my-4 d-flex justify-content-center mx-auto">
           <div className="row justify-content-center">
             <div className="my-3 col-lg-4">
               <div className="my-4">

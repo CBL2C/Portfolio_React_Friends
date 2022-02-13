@@ -1,3 +1,17 @@
+@media (min-width: 1500px) {
+.col-xl-3 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+    }
+}
+
+
+
+
+
+
+
+
 h1 {
     font-size: 1.6rem;
 }
@@ -7,13 +21,25 @@ h1 {
     height:100%;
 }
 
+#jumbotxt {
+    margin: 2rem;
+}
+
+.container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+  }
+
+.row {
+    width: 90%;
+    margin: auto;
+}  
+
 .card {
     width: 280px;
 }
 
-.fContainer {
-    margin-top:2rem;
-}
 
 .card {
     background-color:#1E242F;
@@ -22,3 +48,9 @@ h1 {
 card-title,.label {
     font-weight:bold;
 }
+
+@media (max-width: 767px) {
+    .card-Block {
+      margin: 0 auto;
+    }
+  }

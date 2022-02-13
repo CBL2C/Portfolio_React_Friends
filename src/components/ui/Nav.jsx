@@ -22,10 +22,10 @@ function Nav(props) {
   return (
     <React.Fragment>
       <nav
-        className="navbar navbar-expand-md"
+        className="navbar navbar-expand"
         aria-label="Fourth navbar example"
       >
-        <div className="container">
+        <div id="nav" className="nav">
           <button
             className="navbar-toggler"
             type="button"
@@ -39,7 +39,7 @@ function Nav(props) {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarsExample04">
-            <ul className="navbar-nav me-auto mb-2 mb-md-0">
+            <ul className="navbar-nav me-auto mb-0">
               <li className="nav-item">
                 <Link
                   to="/"
@@ -62,13 +62,15 @@ function Nav(props) {
               </li>
 
             </ul>
-            <div className="text-end">
+            <div id="uName" className="text-end">
               <a
                 href="/"
                 className="align-items-center mb-2 me-2 mb-lg-0 text-decoration-none"
               >
                 {fName} {lName}
               </a>
+            </div>
+            <div className="text-end">
               <Link to="/Login" onClick={goToPage}>
                 <button type="button" className="btn btn-cus btn-outline me-2">
                   Login

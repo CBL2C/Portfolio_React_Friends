@@ -1,12 +1,39 @@
+
+
 .navbar {
     background-color:#3B8EA5;
     color: #e6f2e9;
+    padding: 1rem 1rem .6rem 1rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin: 0 0 1.6rem 0;
+    display: flex;
+    flex-basis: auto;
+}
+
+#nav {
+    width: 100%;
 }
 
 .nav-item, .nav-link, a {
    color: #e6f2e9;
 }
 
-li {
+.navbar-nav {
+    margin-left:1rem;
+    flex-direction: row;
+}
+
+#uName {
     font-weight:bold;
+    margin-right: 1rem;
+}
+
+
+li, #uName {
+    font-weight:bold;
+}
+
+.text-end {
+    margin-right:1rem;
 }

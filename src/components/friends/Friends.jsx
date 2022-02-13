@@ -30,22 +30,22 @@ function GetSomeFriends(props) {
   const mapPerson = (aFriend) => {
     return (
       <React.Fragment>
-        <div class="col-3 my-3">
-          <div className="card">
+        <div className="col-12 col-sm-6 col-med-6 col-lg-4 col-xl-3 d-flex justify-content-center mx-auto">
+          <div className="card d-flex my-4" key={aFriend.id.value}>
             <img className="avatar card-img-top" src={aFriend.picture.large} alt="..." />
             <div className="card-body">
               <h5 className="card-title">{aFriend.name.first} {aFriend.name.last}</h5>
               <p className="card-text">
-                <span class="label">Email: </span>
+                <span className="label">Email: </span>
                 {aFriend.email}
                 <br />
-                <span class="label">Cell: </span>
+                <span className="label">Cell: </span>
                 {aFriend.cell}
                 <br />
-                <span class="label">Age: </span>
+                <span className="label">Age: </span>
                 {aFriend.dob.age}
               </p>
-              <p className="card-text"><small class="text-muted">Located in {aFriend.location.country}</small></p>
+              <p className="card-text"><small className="text-muted">Located in {aFriend.location.country}</small></p>
             </div>
           </div>
         </div>
@@ -55,10 +55,10 @@ function GetSomeFriends(props) {
 
   return (
     <React.Fragment>
-      <div className="fContainer">
+      <div id="jumbotxt" className="container">
         <h1> Here are your current friends, {fName}!</h1>
-        <div className="row my-4">{arrayOfPpl.map(mapPerson)}</div>
       </div>
+      <div className="row justify-content-center">{arrayOfPpl.map(mapPerson)}</div>
     </React.Fragment>
   );
 }
