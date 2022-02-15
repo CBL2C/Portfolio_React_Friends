@@ -71,7 +71,11 @@ function Nav(props) {
               </a>
             </div>
             <div className="text-end">
-              <Link to="/Portfolio_React_Friends/Login" onClick={goToPage}>
+              <Link
+                to="/Portfolio_React_Friends/Login"
+                data-page="/Portfolio_React_Friends/Login"
+                onClick={goToPage}
+              >
                 <button type="button" className="btn btn-cus btn-outline me-2">
                   Login
                 </button>
