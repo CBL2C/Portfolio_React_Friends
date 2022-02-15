@@ -29,10 +29,10 @@ function App() {
         <div id="content">
           <div id="fContainer" className="mx-auto">
             <Routes>
-              <Route path="/" element={<Home user={user}></Home>}></Route>
-              <Route path="/Friends" element={<Friends user={user} />}></Route>
-              <Route path="/Login" element={<Login />}></Route>
-              <Route path="/Register" element={<Register />}></Route>
+              <Route path="/Portfolio_React_Friends" element={<Home user={user}></Home>}></Route>
+              <Route path="/Portfolio_React_Friends/Friends" element={<Friends user={user} />}></Route>
+              <Route path="/Portfolio_React_Friends/Login" element={<Login />}></Route>
+              <Route path="/Portfolio_React_Friends/Register" element={<Register />}></Route>
             </Routes>
           </div>
         </div>

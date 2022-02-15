@@ -42,9 +42,9 @@ function Nav(props) {
             <ul className="navbar-nav me-auto mb-0">
               <li className="nav-item">
                 <Link
-                  to="/"
+                  to="/Portfolio_React_Friends"
                   className="nav-link px-2 link-button"
-                  data-page="/"
+                  data-page="/Portfolio_React_Friends"
                   onClick={goToPage}
                 >
                   Home
@@ -52,9 +52,9 @@ function Nav(props) {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/Friends"
+                  to="/Portfolio_React_Friends/Friends"
                   className="nav-link px-2 link-button"
-                  data-page="/Friends"
+                  data-page="/Portfolio_React_Friends/Friends"
                   onClick={goToPage}
                 >
                   Friends
@@ -71,12 +71,12 @@ function Nav(props) {
               </a>
             </div>
             <div className="text-end">
-              <Link to="/Login" onClick={goToPage}>
+              <Link to="/Portfolio_React_Friends/Login" onClick={goToPage}>
                 <button type="button" className="btn btn-cus btn-outline me-2">
                   Login
                 </button>
               </Link>
-              <Link to="/Register" onClick={goToPage}>
+              <Link to="/Portfolio_React_Friends/Register" onClick={goToPage}>
                 <button type="button" className="btn btn-cus">
                   Register
                 </button>
