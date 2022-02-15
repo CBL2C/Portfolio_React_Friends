@@ -62,34 +62,36 @@ function Nav(props) {
               </li>
 
             </ul>
-            <div id="uName" className="text-end">
-              <a
-                href="/Portfolio_React_Friends"
-                className="align-items-center mb-2 me-2 mb-lg-0 text-decoration-none"
-              >
-                {fName} {lName}
-              </a>
-            </div>
-            <div className="text-end">
-              <Link
-                to="/Portfolio_React_Friends/Login"
-                data-page="/Portfolio_React_Friends/Login"
-                onClick={goToPage}
-              >
-                <button type="button" className="btn btn-cus btn-outline me-2">
-                  Login
-                </button>
-              </Link>
-              <Link to="/Portfolio_React_Friends/Register" onClick={goToPage}>
-                <button type="button" className="btn btn-cus">
-                  Register
-                </button>
-              </Link>
-            </div>
+            <ul className="navbar-nav nav-rt">
+              <li id="uName" className="text-end">
+                <a
+                  href="/Portfolio_React_Friends"
+                  className="align-items-center mb-2 me-2 mb-lg-0 text-decoration-none"
+                >
+                  {fName} {lName}
+                </a>
+              </li>
+              <div className="text-end">
+                <Link
+                  to="/Portfolio_React_Friends/Login"
+                  data-page="/Portfolio_React_Friends/Login"
+                  onClick={goToPage}
+                >
+                  <button type="button" className="btn btn-cus btn-outline me-2">
+                    Login
+                  </button>
+                </Link>
+                <Link to="/Portfolio_React_Friends/Register" onClick={goToPage}>
+                  <button type="button" className="btn btn-cus">
+                    Register
+                  </button>
+                </Link>
+              </div>
+            </ul>
           </div>
         </div>
       </nav>
-    </React.Fragment>
+    </React.Fragment >
   )
 }
 
