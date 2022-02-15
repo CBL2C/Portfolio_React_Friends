@@ -64,7 +64,7 @@ function Nav(props) {
             </ul>
             <div id="uName" className="text-end">
               <a
-                href="/"
+                href="/Portfolio_React_Friends"
                 className="align-items-center mb-2 me-2 mb-lg-0 text-decoration-none"
               >
                 {fName} {lName}
