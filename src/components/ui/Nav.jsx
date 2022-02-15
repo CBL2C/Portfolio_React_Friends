@@ -81,7 +81,11 @@ function Nav(props) {
                     Login
                   </button>
                 </Link>
-                <Link to="/Portfolio_React_Friends/Register" onClick={goToPage}>
+                <Link
+                  to="/Portfolio_React_Friends/Register"
+                  data-page="/Portfolio_React_Friends/Register"
+                  onClick={goToPage}
+                >
                   <button type="button" className="btn btn-cus">
                     Register
                   </button>
